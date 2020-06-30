@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-        <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-        <!-- replace the below link with what aperture.p3k.io gives you after signing-in.
-            (Details: https://indieweb.org/Microsub#Getting_Started)
-            In summary:
-            1. sign in to https://aperture.p3k.io/login with your domain
-            2. you will see a <link> tag displayed on your dashboard
-            3. copy that <link> tag that looks like:
-            <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
-            after this HTML comment. -->
-            <title>My New Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+            #capsule-edu {
+                font-family: arial, helvetica, sans-serif;
+            }
+            #capsule-edu .benefits-graphics p {
+                font-size: 10pt;
+            }
+            #capsule-edu .benefits-list li {
+                font-size: 12pt;
+            }
+        </style>
     </head>
     <body>
-        <h1>My New Website</h1>
-        <div class="h-card">
-            <p>
-                Hi, my name is <span class="p-name">SalTor</span> and I am a human on the Internet.
-            </p>
+        <div id="capsule-edu" class="container">
+            <div class="row row-cols-5 justify-content-center mt-5 mb-5">
+                <div class="col-8 text-center" style="font-family: arial, helvetica, sans-serif;">
+                    <span style="font-size: 14pt;">Stay safe. Stay home. We&nbsp;partner with <strong>Capsule Pharmacy</strong> to hand-deliver your medications directly to your door same-day, for free</span><span style="font-size: 14pt;">.</span>
+                </div>
+            </div>
 
-            <p>
-                You can find me on other websites below:
-            </p>
+            <div class="row row-cols-md-5 justify-content-center mt-5 mb-5 benefits-graphics">
+                <div class="col col-sm-6 col-12 text-center">
+                    <img class="img-fluid" src="https://www.jotform.com/uploads/jesschow/form_files/Delivery_table.5e979872e113c3.92864326.png" alt="" width="160" height="114"/>
+                    <p>Capsule delivers to all five boroughs&nbsp;in NYC and Westchester, 7 days a week</p>
+                </div>
 
-            <ul>
-                <li><a class="u-url" href="https://github.com/saltor" rel="me">@saltor</a></li>
-                <li><button style="display:block" type="button" class="jfInput-button forNext u-right" data-component="button" aria-label="Next">Next</button></li>
-            </ul>
+                <div class="col col-sm-6 col-12 text-center">
+                    <img class="img-fluid" src="https://www.jotform.com/uploads/jesschow/form_files/Phone_table.5e9798dc792910.81410055.png" alt="" width="160" height="114" />
+                    <p>Manage all your medications from your phone</p>
+                </div>
+
+                <div class="col col-sm-6 col-12 text-center">
+                    <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="https://www.jotform.com/uploads/gbablon/form_files/Chat.5ea9aefec352c9.10575223.png" alt="" width="160" height="114" />
+
+                    <p>Chat, text, call or email a pharmacist anytime</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-md-5">
+                <div class="col"></div>
+
+                <div class="col-md-6">
+                    <ul class="benefits-list">
+                        <li>It&rsquo;s free&mdash;just pay your copay</li>
+                        <li>Virtually all insurance accepted</li>
+                        <li>Never wait in line at the pharmacy again</li>
+                        <li>You don't need an account to use Capsule today</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>
